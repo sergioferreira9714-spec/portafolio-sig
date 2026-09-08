@@ -1,0 +1,51 @@
+tipo,x,y,nivel_dBA,banda,en_AID
+Vivienda,3944.8,1200.0,69.8,≥ 65,True
+Vivienda,-1650.1,-3066.9,66.7,≥ 65,True
+Vivienda,2995.7,2095.1,69.1,≥ 65,True
+Vivienda,5735.8,-367.4,65.7,≥ 65,True
+Colegio,-1138.3,1723.7,70.9,≥ 70,True
+Vivienda,-4474.3,-1826.4,67.7,≥ 65,True
+Centro comunitario,1912.1,3801.7,63.7,≥ 60,False
+Vivienda,1361.5,2118.2,69.5,≥ 65,True
+Vivienda,6043.5,-623.1,65.8,≥ 65,True
+Hospital,-7065.2,2211.9,61.0,≥ 60,False
+Vivienda,-3638.9,4409.1,62.0,≥ 60,False
+Colegio,-4609.9,6269.1,57.5,≥ 55,False
+Vivienda,-9537.1,-5507.5,53.0,< 55,False
+Vivienda,695.4,3091.0,65.3,≥ 65,True
+Centro comunitario,2902.9,1627.7,71.5,≥ 70,True
+Vivienda,-4063.3,-328.5,70.5,≥ 70,True
+Vivienda,7621.1,-3523.3,58.2,≥ 55,False
+Vivienda,4520.6,4400.2,60.7,≥ 60,False
+Vivienda,3450.6,-4416.1,62.2,≥ 60,False
+Vivienda,2209.4,1984.3,70.6,≥ 70,True
+Centro comunitario,5256.2,4556.5,59.8,≥ 55,False
+Vivienda,-7325.9,-5598.8,55.9,≥ 55,False
+Vivienda,3376.6,-1058.8,72.3,≥ 70,True
+Vivienda,3315.3,-4582.3,62.1,≥ 60,False
+Vivienda,-9722.5,854.2,59.0,≥ 55,False
+Vivienda,1908.7,5300.3,60.3,≥ 60,False
+Vivienda,-1377.3,7082.4,56.9,≥ 55,False
+Vivienda,4298.4,-6223.4,57.8,≥ 55,False
+Vivienda,-2414.8,-2012.3,71.0,≥ 70,True
+Vivienda,-100.3,2462.4,67.4,≥ 65,True
+Colegio,3999.4,-4355.2,62.1,≥ 60,False
+Vivienda,5845.9,-22.2,65.0,≥ 60,True
+Vivienda,8892.1,-5393.0,53.9,< 55,False
+Vivienda,-7285.5,1420.5,62.1,≥ 60,False
+Vivienda,2623.5,-3434.7,65.7,≥ 65,True
+Centro comunitario,-7412.7,-5905.4,55.3,≥ 55,False
+Vivienda,-1182.9,-4925.0,61.3,≥ 60,False
+Vivienda,5954.7,707.4,66.1,≥ 65,True
+Vivienda,8209.7,1753.4,59.9,≥ 55,False
+Colegio,5391.9,-2242.6,64.2,≥ 60,False
+Hospital,-9663.5,1836.2,57.3,≥ 55,False
+Vivienda,-2924.2,-1893.6,71.0,≥ 70,True
+Vivienda,-7008.4,-4727.6,57.6,≥ 55,False
+Vivienda,10375.1,-2365.3,55.4,≥ 55,False
+Vivienda,-7404.5,-1340.6,62.3,≥ 60,False
+Vivienda,-5318.3,5281.8,58.7,≥ 55,False
+Vivienda,-2969.8,-4919.5,61.6,≥ 60,False
+Vivienda,-9133.6,-5297.1,54.1,< 55,False
+Vivienda,7704.0,787.2,62.3,≥ 60,False
+Vivienda,2836.3,5931.4,58.8,≥ 55,False

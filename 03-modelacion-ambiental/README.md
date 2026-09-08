@@ -99,5 +99,26 @@ hace el análisis territorial— y este es el segundo.
 
 ### Recreación demostrativa del método
 
-*(pendiente)* — versión sintética y rotulada como tal del flujo
-**campo continuo → isófonas → AID → receptores**, sin material de K2 Applus+.
+Versión **100 % sintética y rotulada como tal**. No reproduce ni deriva de ningún
+entregable de K2 Applus+; solo ilustra el flujo de trabajo SIG.
+
+![Proceso: campo → isófonas → AID](salidas/proceso_isofonas.png)
+
+| Paso | Qué se hace | Entidad resultante |
+|------|-------------|--------------------|
+| 1 | Campo continuo de nivel sonoro (salida del modelo acústico) sobre malla regular | ráster dB(A) |
+| 2 | Trazado de **isófonas** a 55/60/65/70/75 dB(A) | líneas |
+| 3 | **AID** = región por encima del umbral de impacto (aquí ≥ 65 dB(A)) | polígono |
+| 4 | **Cruce** del AID con receptores sensibles (viviendas, colegios, hospitales…) | tabla de afectación |
+
+![Mapa final: isófonas, AID y receptores](salidas/isofonas_aid.png)
+
+En el escenario sintético: AID de 73 km², 19 de 50 receptores dentro
+(17 viviendas + 1 colegio + 1 centro comunitario).
+
+**Ejecutar:** `python codigo/isofonas_aid.py` (numpy, pandas, matplotlib, shapely).
+
+Salidas: [`salidas/isofonas_aid.png`](salidas/isofonas_aid.png) ·
+[`salidas/proceso_isofonas.png`](salidas/proceso_isofonas.png) ·
+[`salidas/receptores_afectados.csv`](salidas/receptores_afectados.csv) ·
+GeoJSON de isófonas, AID y receptores en [`datos_muestra/`](datos_muestra/).

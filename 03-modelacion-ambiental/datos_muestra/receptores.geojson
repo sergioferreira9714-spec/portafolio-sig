@@ -1,0 +1,805 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 69.8,
+    "banda": "≥ 65",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3944.796939569111,
+     1199.9803106117943
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 66.7,
+    "banda": "≥ 65",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1650.0582916866256,
+     -3066.9159106047273
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 69.1,
+    "banda": "≥ 65",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2995.672943564911,
+     2095.0882686313453
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 65.7,
+    "banda": "≥ 65",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5735.815121206246,
+     -367.3711598328388
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Colegio",
+    "nivel_dBA": 70.9,
+    "banda": "≥ 70",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1138.2603991457818,
+     1723.6891828773498
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 67.7,
+    "banda": "≥ 65",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4474.335480898648,
+     -1826.4312721787574
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Centro comunitario",
+    "nivel_dBA": 63.7,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1912.0782918353023,
+     3801.7054014713117
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 69.5,
+    "banda": "≥ 65",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1361.5015752956615,
+     2118.20692450316
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 65.8,
+    "banda": "≥ 65",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     6043.470226279246,
+     -623.0875865176786
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Hospital",
+    "nivel_dBA": 61.0,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7065.194283429397,
+     2211.8500498276353
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 62.0,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -3638.871116955512,
+     4409.143064755188
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Colegio",
+    "nivel_dBA": 57.5,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4609.91828393621,
+     6269.114297242961
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 53.0,
+    "banda": "< 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -9537.081654280684,
+     -5507.517296540768
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 65.3,
+    "banda": "≥ 65",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     695.3900535834791,
+     3090.9613406788185
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Centro comunitario",
+    "nivel_dBA": 71.5,
+    "banda": "≥ 70",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2902.923168725382,
+     1627.7397797968345
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 70.5,
+    "banda": "≥ 70",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4063.3451731169357,
+     -328.51273065220397
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 58.2,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7621.058909728873,
+     -3523.3272724197495
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 60.7,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4520.583851632394,
+     4400.1601471560025
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 62.2,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3450.570633595444,
+     -4416.082977055997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 70.6,
+    "banda": "≥ 70",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2209.3890029253344,
+     1984.3091300716212
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Centro comunitario",
+    "nivel_dBA": 59.8,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5256.182604467493,
+     4556.537986709413
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 55.9,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7325.889117487062,
+     -5598.842508180179
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 72.3,
+    "banda": "≥ 70",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3376.613120374254,
+     -1058.8124416914181
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 62.1,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3315.2725844339634,
+     -4582.2588613070475
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 59.0,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -9722.452174286362,
+     854.189378125652
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 60.3,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1908.6655612990885,
+     5300.312957361291
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 56.9,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1377.3174069048262,
+     7082.446102102692
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 57.8,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4298.374828339346,
+     -6223.400550092303
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 71.0,
+    "banda": "≥ 70",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2414.8420320071773,
+     -2012.3215200237105
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 67.4,
+    "banda": "≥ 65",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.32471707005182,
+     2462.40782665819
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Colegio",
+    "nivel_dBA": 62.1,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3999.405419046416,
+     -4355.222528532226
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 65.0,
+    "banda": "≥ 60",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5845.940326685515,
+     -22.162461279357558
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 53.9,
+    "banda": "< 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8892.054020006202,
+     -5393.027089472543
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 62.1,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7285.508385215155,
+     1420.5412782066642
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 65.7,
+    "banda": "≥ 65",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2623.5072811039354,
+     -3434.710680352542
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Centro comunitario",
+    "nivel_dBA": 55.3,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7412.673983242214,
+     -5905.421659331091
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 61.3,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1182.8764212783044,
+     -4924.959952718048
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 66.1,
+    "banda": "≥ 65",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5954.723603373624,
+     707.3615695388298
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 59.9,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     8209.714108671826,
+     1753.351820264732
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Colegio",
+    "nivel_dBA": 64.2,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     5391.945605790217,
+     -2242.5517166822774
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Hospital",
+    "nivel_dBA": 57.3,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -9663.509355102851,
+     1836.1910983819107
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 71.0,
+    "banda": "≥ 70",
+    "en_AID": true
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2924.2288101774448,
+     -1893.5539211697578
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 57.6,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7008.417885632199,
+     -4727.56471308502
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 55.4,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     10375.091742753957,
+     -2365.3083913809
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 62.3,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -7404.480561295222,
+     -1340.56670395111
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 58.7,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -5318.259588793155,
+     5281.7770841996135
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 61.6,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2969.829974185838,
+     -4919.547216387118
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 54.1,
+    "banda": "< 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -9133.55657948889,
+     -5297.102200739155
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 62.3,
+    "banda": "≥ 60",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     7704.006274501342,
+     787.2259465179241
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "tipo": "Vivienda",
+    "nivel_dBA": 58.8,
+    "banda": "≥ 55",
+    "en_AID": false
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2836.317574752986,
+     5931.427692413772
+    ]
+   }
+  }
+ ]
+}
