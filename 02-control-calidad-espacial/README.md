@@ -61,6 +61,24 @@ Reporte de auditoría: [`salidas/reporte_qc.xlsx`](salidas/reporte_qc.xlsx)
   SELECT * FROM qc_areas WHERE evaluacion = 'Corregir' ORDER BY diferencia_pct DESC;
   ```
 
+## En producción · Panel de control de calidad (proyecto de auditoría catastral)
+
+La misma lógica de tolerancias y veredicto se llevó a un **panel de control en
+vivo** para el equipo de auditoría de un proyecto real:
+
+- Se apoya en una instancia **PostgreSQL / PostGIS dedicada** al proyecto,
+  montada en un equipo reservado solo para esa auditoría.
+- El panel consume los resultados del control (`Diferencia_%`, `Evaluación`,
+  estado y observación de QC) y ofrece al equipo una vista actualizada de
+  **Cumple / Corregir por zona** y la **lista de predios pendientes de
+  corrección**, sin necesidad de reprocesar nada.
+- Al calcularse el área con `ST_Area()` sobre la geometría vigente, el panel
+  refleja el estado real tras cada edición.
+
+Trabajo realizado para un cliente. No se reproducen aquí sus datos, pantallas ni
+la cadena de conexión. *(Por confirmar con el titular: herramienta del panel,
+posibilidad de mostrar una captura anonimizada y redacción del crédito.)*
+
 ## Datos de muestra
 
 - [`datos_muestra/predios.geojson`](datos_muestra/predios.geojson) — geometría sintética generada

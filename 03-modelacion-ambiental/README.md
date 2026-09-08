@@ -26,7 +26,17 @@ C(x,y) = Q / (pi · u · sy · sz) · exp(-y² / (2·sy²)) · exp(-H² / (2·sz
 ```
 
 con `sy`, `sz` (coeficientes de dispersión de Briggs, campo abierto) en función
-de la distancia a favor del viento y de la clase de estabilidad Pasquill-Gifford.
+de la distancia a favor del viento `x` (m) y de la clase de estabilidad
+Pasquill-Gifford:
+
+| Clase | σy (m) | σz (m) |
+|---|---|---|
+| A · muy inestable | 0,22·x·(1+10⁻⁴·x)⁻⁰˙⁵ | 0,20·x |
+| B · inestable | 0,16·x·(1+10⁻⁴·x)⁻⁰˙⁵ | 0,12·x |
+| C · ligeramente inestable | 0,11·x·(1+10⁻⁴·x)⁻⁰˙⁵ | 0,08·x·(1+2·10⁻⁴·x)⁻⁰˙⁵ |
+| D · neutra | 0,08·x·(1+10⁻⁴·x)⁻⁰˙⁵ | 0,06·x·(1+1,5·10⁻³·x)⁻⁰˙⁵ |
+| E · ligeramente estable | 0,06·x·(1+10⁻⁴·x)⁻⁰˙⁵ | 0,03·x·(1+3·10⁻⁴·x)⁻¹ |
+| F · estable | 0,04·x·(1+10⁻⁴·x)⁻⁰˙⁵ | 0,016·x·(1+3·10⁻⁴·x)⁻¹ |
 
 ### Proceso, paso a paso
 
@@ -61,6 +71,25 @@ luego dilución.
 La misma emisión bajo las seis clases de estabilidad. Atmósfera inestable →
 penacho ancho y diluido, pico alto cerca de la fuente. Atmósfera estable →
 penacho estrecho, concentrado y de largo alcance.
+
+### Supuestos y límites
+
+- Estado estacionario; viento uniforme y constante en dirección y velocidad.
+- Terreno plano, sin obstáculos ni efectos de edificio.
+- Contaminante conservativo: sin transformación química, deposición ni lavado.
+- Reflexión total en el suelo; receptor a nivel de suelo (`z = 0`).
+- `H` es la altura **efectiva** (física + sobreelevación del penacho); la
+  sobreelevación se introduce ya sumada, el script no la calcula.
+- Coeficientes de Briggs válidos aprox. entre 100 m y 10 km a favor del viento.
+- Es un modelo de **tamizado (screening)** y didáctico. Para una autorización
+  ambiental se usaría AERMOD o CALPUFF con meteorología horaria y topografía.
+
+### Conexión con SIG
+
+`exportar_ascii()` escribe un **raster ESRI ASCII** (`.asc`) con origen en la
+fuente. Se abre directo en QGIS/ArcGIS; reproyectado a un CRS local se cruza con
+capas de población, usos del suelo, catastro y receptores sensibles para
+delimitar el área de influencia — el mismo flujo del apartado B.
 
 ### Ejecutar
 

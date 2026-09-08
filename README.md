@@ -32,7 +32,8 @@ el tamaño del predio y emitir un veredicto automático **Cumple / Corregir**.
 ![Mapa de control de calidad](02-control-calidad-espacial/salidas/mapa_qc.png)
 
 Reporte Excel de auditoría · misma regla implementada también en **PostGIS**
-(`ST_Area` en vivo, sin recálculos manuales).
+(`ST_Area` en vivo) · llevada a un **panel de control en producción** sobre una
+instancia PostGIS dedicada en un proyecto real de auditoría catastral.
 **[Ver caso →](02-control-calidad-espacial/)**
 
 ## 03 · Modelación ambiental → entidades SIG
