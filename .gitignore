@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+~$*
+
+# SIG / datos pesados que NO deben publicarse
+*.gdb/
+*.sde
+*.mxd
+*.aprx
+*.lock
+
+# Datos de cliente (nunca subir)
+/_privado/
