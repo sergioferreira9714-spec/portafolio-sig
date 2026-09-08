@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aseguramiento de Calidad — maqueta</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Cabinet+Grotesk:wght@400;500;700;800&display=swap');
+:root{
+  --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;--border:#30363d;
+  --accent:#58a6ff;--green:#3fb950;--amber:#d29922;--red:#f85149;--purple:#bc8cff;
+  --text:#c9d1d9;--muted:#8b949e;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;--sans:'Cabinet Grotesk','Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);padding-bottom:40px}
+.header{background:linear-gradient(135deg,#161b22,#0d1117);border-bottom:1px solid var(--border);
+  padding:18px 30px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:14px}
+.avatar{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#58a6ff,#bc8cff);
+  display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:15px}
+.header h1{font-size:16px;font-weight:800;letter-spacing:.2px}
+.header .meta{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:right;line-height:1.5}
+.wrap{max-width:1180px;margin:26px auto;padding:0 30px;display:flex;flex-direction:column;gap:22px}
+.section-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;
+  color:var(--muted);margin-bottom:12px}
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.kpi{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px 18px}
+.kpi .v{font-family:var(--mono);font-size:26px;font-weight:600;color:#fff}
+.kpi .l{font-size:12px;color:var(--muted);margin-top:4px}
+.kpi .d{font-size:11px;font-family:var(--mono);margin-top:8px}
+.up{color:var(--green)}.down{color:var(--amber)}
+.checks{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.check{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:13px 15px;
+  display:flex;flex-direction:column;gap:6px;position:relative}
+.check .n{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.check .name{font-size:13px;font-weight:500}
+.check .res{font-family:var(--mono);font-size:20px;font-weight:600;color:#fff}
+.dot{position:absolute;top:14px;right:14px;width:9px;height:9px;border-radius:50%}
+.dot.g{background:var(--green);box-shadow:0 0 8px #3fb95066}
+.dot.a{background:var(--amber);box-shadow:0 0 8px #d2992266}
+.dot.r{background:var(--red);box-shadow:0 0 8px #f8514966}
+.two{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:18px 20px}
+.card h3{font-size:13px;font-weight:700;margin-bottom:14px}
+.stack{display:flex;height:26px;border-radius:6px;overflow:hidden;border:1px solid var(--border)}
+.stack i{display:block}
+.legend{display:flex;gap:18px;margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:6px}
+.sw{width:10px;height:10px;border-radius:2px;display:inline-block}
+.topo{display:flex;gap:22px;align-items:center}
+.topo .nums{font-family:var(--mono);font-size:12px;line-height:2}
+.topo .nums b{color:#fff;font-size:16px}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--border)}
+th{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+td .bar{height:7px;background:var(--accent);border-radius:3px;display:inline-block;vertical-align:middle}
+td.mono{font-family:var(--mono);color:#fff}
+.foot{max-width:1180px;margin:6px auto 0;padding:0 30px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="brand">
+    <div class="avatar">SF</div>
+    <h1>Análisis de Aseguramiento de Calidad</h1>
+  </div>
+  <div class="meta">
+    proyecto de auditoría catastral<br>
+    maqueta · datos ficticios · corte 2026-07-27
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div>
+    <div class="section-title">Resumen</div>
+    <div class="kpis">
+      <div class="kpi"><div class="v">3 440</div><div class="l">Predios en BD</div><div class="d up">▲ 55 esta semana</div></div>
+      <div class="kpi"><div class="v">3 412</div><div class="l">Con geometría</div><div class="d up">99,2 %</div></div>
+      <div class="kpi"><div class="v">3 085</div><div class="l">Entregados</div><div class="d up">89,7 %</div></div>
+      <div class="kpi"><div class="v">28</div><div class="l">Omisiones</div><div class="d down">predios sin polígono</div></div>
+      <div class="kpi"><div class="v">12</div><div class="l">Comisiones</div><div class="d down">geometría sin registro</div></div>
+    </div>
+  </div>
+
+  <div>
+    <div class="section-title">8 validaciones automáticas</div>
+    <div class="checks">
+      <div class="check"><span class="dot g"></span><div class="n">check 01</div><div class="name">Capa incorrecta</div><div class="res">0</div></div>
+      <div class="check"><span class="dot g"></span><div class="n">check 02</div><div class="name">Predios duplicados</div><div class="res">0</div></div>
+      <div class="check"><span class="dot a"></span><div class="n">check 03</div><div class="name">Saltos secuenciales</div><div class="res">11</div></div>
+      <div class="check"><span class="dot g"></span><div class="n">check 04</div><div class="name">Solapamiento geométrico</div><div class="res">0</div></div>
+      <div class="check"><span class="dot a"></span><div class="n">check 05</div><div class="name">Unidades en déficit</div><div class="res">2</div></div>
+      <div class="check"><span class="dot g"></span><div class="n">check 06</div><div class="name">Desfase GDB / BD</div><div class="res">0</div></div>
+      <div class="check"><span class="dot g"></span><div class="n">check 07</div><div class="name">Duplicados intra-capa</div><div class="res">0</div></div>
+      <div class="check"><span class="dot a"></span><div class="n">check 08</div><div class="name">Sin geometría</div><div class="res">28</div></div>
+    </div>
+  </div>
+
+  <div class="two">
+    <div class="card">
+      <h3>Cumplimiento de área (registral vs geográfica)</h3>
+      <div class="stack">
+        <i style="width:92.4%;background:var(--green)"></i>
+        <i style="width:6.2%;background:var(--amber)"></i>
+        <i style="width:1.4%;background:var(--muted)"></i>
+      </div>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--green)"></i> Cumple &nbsp;3 180</span>
+        <span><i class="sw" style="background:var(--amber)"></i> Corregir &nbsp;214</span>
+        <span><i class="sw" style="background:var(--muted)"></i> Sin VUR &nbsp;46</span>
+      </div>
+      <div class="legend" style="margin-top:6px">tolerancia por tamaño · 7 / 6 / 4 / 3 %</div>
+    </div>
+
+    <div class="card">
+      <h3>Topología por manzana</h3>
+      <div class="topo">
+        <svg width="150" height="110" viewBox="0 0 150 110">
+          <rect x="4" y="4" width="142" height="102" fill="none" stroke="#30363d"/>
+          <rect x="10" y="10" width="60" height="44" fill="#21262d" stroke="#58a6ff"/>
+          <rect x="74" y="10" width="66" height="44" fill="#21262d" stroke="#58a6ff"/>
+          <rect x="10" y="58" width="44" height="44" fill="#21262d" stroke="#58a6ff"/>
+          <rect x="58" y="58" width="40" height="44" fill="#21262d" stroke="#58a6ff"/>
+          <rect x="102" y="58" width="38" height="20" fill="#d2992222" stroke="#d29922" stroke-dasharray="3 2"/>
+        </svg>
+        <div class="nums">
+          <b>0</b> solapes<br>
+          <b style="color:#d29922">3</b> huecos<br>
+          <b>412</b> manzanas revisadas
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Distribución por etapa</h3>
+    <table>
+      <tr><th>Etapa</th><th>Predios</th><th>%</th><th style="width:45%">Avance</th></tr>
+      <tr><td>Entregado</td><td class="mono">3 085</td><td class="mono">89,7</td><td><i class="bar" style="width:89%"></i></td></tr>
+      <tr><td>En proceso</td><td class="mono">241</td><td class="mono">7,0</td><td><i class="bar" style="width:7%"></i></td></tr>
+      <tr><td>Pendiente reconocedor</td><td class="mono">86</td><td class="mono">2,5</td><td><i class="bar" style="width:2.5%"></i></td></tr>
+      <tr><td>Sin iniciar</td><td class="mono">28</td><td class="mono">0,8</td><td><i class="bar" style="width:0.8%"></i></td></tr>
+    </table>
+  </div>
+
+</div>
+
+<div class="foot">
+  Recreación / maqueta con datos ficticios · no reproduce datos reales de ningún proyecto ·
+  Sistema diseñado y desarrollado por Sergio Ferreira
+</div>
+
+</body>
+</html>

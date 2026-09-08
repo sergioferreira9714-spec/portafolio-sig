@@ -32,8 +32,7 @@ el tamaño del predio y emitir un veredicto automático **Cumple / Corregir**.
 ![Mapa de control de calidad](02-control-calidad-espacial/salidas/mapa_qc.png)
 
 Reporte Excel de auditoría · misma regla implementada también en **PostGIS**
-(`ST_Area` en vivo) · llevada a un **panel de control en producción** sobre una
-instancia PostGIS dedicada en un proyecto real de auditoría catastral.
+(`ST_Area` en vivo). Es además uno de los reportes del sistema del caso 04.
 **[Ver caso →](02-control-calidad-espacial/)**
 
 ## 03 · Modelación ambiental → entidades SIG
@@ -53,6 +52,18 @@ Influencia Directa → cruce con receptores sensibles**.
 
 **[Ver caso →](03-modelacion-ambiental/)**
 
+## 04 · Sistema de auditoría de calidad catastral
+
+Aplicación full-stack de aseguramiento de calidad: **FastAPI** (~84 endpoints),
+**motor dual PostgreSQL/PostGIS o SQLite+shapely**, ingesta de GDB con arcpy,
+8 validaciones automáticas, panel web e informe estático.
+
+![Maqueta del panel de auditoría](04-sistema-auditoria-calidad/mockup/dashboard_mock.png)
+
+Diseñado y desarrollado para un proyecto de auditoría catastral · ~14.800 líneas
+de Python · se publica solo la ficha y una maqueta con datos ficticios.
+**[Ver caso →](04-sistema-auditoria-calidad/)**
+
 ---
 
 ## Stack
@@ -62,6 +73,7 @@ Influencia Directa → cruce con receptores sensibles**.
 | **Lenguaje** | Python (numpy, pandas, matplotlib, shapely) |
 | **SIG** | ArcGIS Pro (arcpy, Python toolboxes `.pyt`), QGIS (PyQGIS, Processing) |
 | **Datos espaciales** | PostgreSQL / PostGIS, File Geodatabase, GeoJSON, raster ASCII |
+| **Backend / web** | FastAPI, uvicorn, SQLite, Leaflet (sistema del caso 04) |
 | **Aplicación** | catastro multipropósito · evaluación de impacto ambiental (ruido, calidad del aire) |
 
 ## Cómo ejecutar
