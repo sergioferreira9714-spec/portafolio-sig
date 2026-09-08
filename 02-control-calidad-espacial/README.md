@@ -1,23 +1,15 @@
 # 02 · Control de calidad espacial con bandas de tolerancia
 
-> **En preparación** — versión generalizada, con datos sintéticos.
+Verificar, sobre todo un bloque catastral, si el **área calculada
+geométricamente** coincide —dentro de una tolerancia— con el **área registral**
+(la del folio de matrícula), y marcar automáticamente los predios que deben
+corregirse.
 
-## El problema
+## Regla de negocio
 
-Verificar, sobre miles de predios, si el **área calculada geométricamente**
-coincide —dentro de una tolerancia— con el **área registral**, y marcar
-automáticamente los que deben corregirse.
+`Diferencia_% = |área_geométrica − área_registral| / área_registral · 100`
 
-## El enfoque
-
-Rutina que, para cada predio:
-
-1. Cruza la capa con la fuente registral (CSV / tabla) por número predial.
-2. Calcula `Diferencia_% = |área_geométrica − área_registral| / área_registral · 100`.
-3. Aplica una **banda de tolerancia según el tamaño del predio**
-   (más estricta cuanto mayor es el área).
-4. Escribe el veredicto `Cumple` / `Corregir` en la capa.
-5. Exporta un **reporte a Excel** con las columnas de auditoría.
+La tolerancia depende del tamaño del predio (más estricta cuanto mayor es):
 
 | Área registral | Tolerancia |
 |---|---|
@@ -26,10 +18,52 @@ Rutina que, para cada predio:
 | ≤ 500 m² | 4 % |
 | > 500 m² | 3 % |
 
-## Qué se publicará aquí
+Veredicto: **Cumple** · **Corregir** · **Sin Área Registral**.
 
-- Código generalizado.
-- Datos de muestra sintéticos (capa + tabla registral ficticia).
-- Reporte Excel de ejemplo y mapa Cumple / Corregir.
-- Variante que ejecuta el mismo cálculo **directamente en PostGIS**
-  (`ST_Area` en vivo, sin recálculos manuales).
+## Proceso, paso a paso
+
+| Paso | Qué se hace |
+|------|-------------|
+| 1 | Cruce de la capa de predios con la fuente registral por número predial. |
+| 2 | Cálculo del área geométrica de cada predio. |
+| 3 | Cálculo de la diferencia porcentual frente al área registral. |
+| 4 | Selección de la banda de tolerancia según el tamaño y **veredicto automático**. |
+| 5 | Salidas: **mapa temático** + **reporte Excel de auditoría** (ordenado por desviación). |
+
+## Resultado (datos sintéticos)
+
+![Mapa de control de calidad](salidas/mapa_qc.png)
+
+56 predios de un bloque sintético con errores inyectados: 31 Cumple, 20 Corregir,
+5 sin área registral. Las mayores desviaciones (12–14 %) se concentran, como es
+esperable, en los predios grandes, donde la tolerancia es del 3 %.
+
+Reporte de auditoría: [`salidas/reporte_qc.xlsx`](salidas/reporte_qc.xlsx)
+(cabecera con formato, filas coloreadas por veredicto, ordenadas por diferencia).
+
+## Dos implementaciones, misma regla
+
+- **Python autónomo** — [`codigo/qc_areas.py`](codigo/qc_areas.py)
+  Genera el bloque sintético, corre el control y produce el mapa y el Excel.
+  Requiere `numpy`, `pandas`, `matplotlib`, `shapely`, `openpyxl`. No usa arcpy ni QGIS.
+
+  ```bash
+  python codigo/qc_areas.py
+  ```
+
+- **PostGIS** — [`postgis/qc_areas.sql`](postgis/qc_areas.sql)
+  La misma lógica como función + vista. El área geométrica se calcula con
+  `ST_Area()` **en vivo** en cada consulta, así nunca queda desactualizada tras
+  editar la geometría en QGIS:
+
+  ```sql
+  SELECT evaluacion, count(*) FROM qc_areas GROUP BY evaluacion;
+  SELECT * FROM qc_areas WHERE evaluacion = 'Corregir' ORDER BY diferencia_pct DESC;
+  ```
+
+## Datos de muestra
+
+- [`datos_muestra/predios.geojson`](datos_muestra/predios.geojson) — geometría sintética generada
+- [`datos_muestra/registral.csv`](datos_muestra/registral.csv) — tabla registral sintética (con errores)
+
+Todo sintético. Ningún dato real de cliente.
