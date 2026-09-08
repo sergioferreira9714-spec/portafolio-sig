@@ -21,15 +21,15 @@ Del modelo físico a la cartografía de decisión.
 **A. Pluma gaussiana** — modelo propio de dispersión de contaminantes
 atmosféricos, de principio a fin, reproducible sin software propietario.
 
-![Pluma gaussiana](03-modelacion-ambiental/salidas/pluma_hero.png)
+![Pluma gaussiana](01-modelacion-ambiental/salidas/pluma_hero.png)
 
 **B. Componente SIG en un estudio de ruido aeroportuario** (K2 Applus+) —
 recreación demostrativa del flujo **campo continuo → isófonas → Área de
 Influencia Directa → cruce con receptores sensibles**.
 
-![Isófonas y AID](03-modelacion-ambiental/salidas/isofonas_aid.png)
+![Isófonas y AID](01-modelacion-ambiental/salidas/isofonas_aid.png)
 
-**[Ver caso →](03-modelacion-ambiental/)**
+**[Ver caso →](01-modelacion-ambiental/)**
 
 ## Sistema de auditoría de calidad de datos espaciales
 
@@ -37,34 +37,34 @@ Aplicación full-stack de aseguramiento de calidad: **FastAPI** (~84 endpoints),
 **motor dual PostgreSQL/PostGIS o SQLite+shapely**, ingesta de geodatabase con
 arcpy, 8 validaciones automáticas, panel web e informe estático.
 
-![Maqueta del panel de auditoría](04-sistema-auditoria-calidad/mockup/dashboard_mock.png)
+![Maqueta del panel de auditoría](02-sistema-auditoria-calidad/mockup/dashboard_mock.png)
 
 Diseñado y desarrollado de extremo a extremo para un proyecto de auditoría
 catastral · ~14.800 líneas de Python · se publica solo la ficha y una maqueta con
 datos ficticios.
-**[Ver caso →](04-sistema-auditoria-calidad/)**
+**[Ver caso →](02-sistema-auditoria-calidad/)**
 
 ## Fusión y unificación topológica de polígonos
 
 Consolidar los fragmentos de un predio en un único polígono por identificador y
 migrar los atributos traduciendo los campos numéricos a códigos de dominio.
 
-![Antes / después](01-fusion-poligonos-catastro/salidas/antes_despues.png)
+![Antes / después](03-fusion-poligonos-catastro/salidas/antes_despues.png)
 
 Unión progresiva por área · traducción `1/2 → Convencional/No Convencional`,
 `3 → PS-03` · deduplicación en re-ejecuciones.
-**[Ver caso →](01-fusion-poligonos-catastro/)**
+**[Ver caso →](03-fusion-poligonos-catastro/)**
 
 ## Control de calidad espacial con bandas de tolerancia
 
 Comparar el área geométrica con el área registral, aplicar una tolerancia según
 el tamaño del predio y emitir un veredicto automático **Cumple / Corregir**.
 
-![Mapa de control de calidad](02-control-calidad-espacial/salidas/mapa_qc.png)
+![Mapa de control de calidad](04-control-calidad-espacial/salidas/mapa_qc.png)
 
 Reporte Excel de auditoría · misma regla implementada también en **PostGIS**
 (`ST_Area` en vivo) · es además uno de los reportes del sistema de auditoría.
-**[Ver caso →](02-control-calidad-espacial/)**
+**[Ver caso →](04-control-calidad-espacial/)**
 
 ---
 

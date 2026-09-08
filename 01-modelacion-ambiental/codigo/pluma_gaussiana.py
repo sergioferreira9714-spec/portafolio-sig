@@ -239,7 +239,11 @@ def figura_sensibilidad(escenario_base, umbral, contaminante, ruta_png):
 # 5. Escenario de prueba
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
-    salida = os.path.dirname(os.path.abspath(__file__))
+    raiz = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    dir_sal = os.path.join(raiz, "salidas")
+    dir_dat = os.path.join(raiz, "datos")
+    os.makedirs(dir_sal, exist_ok=True)
+    os.makedirs(dir_dat, exist_ok=True)
 
     # Chimenea industrial pequena, emision de NO2.
     # Umbral horario NO2 (RD 102/2011 / Directiva 2008/50/CE): 200 ug/m3.
@@ -249,9 +253,9 @@ if __name__ == "__main__":
     X, Y, C = pluma_gaussiana(estabilidad="D", **base)
     esc = dict(estab="D", u=base["u_m_s"], H=base["H_m"], Q=base["Q_g_s"],
                dir=base["direccion_viento_deg"])
-    m = figura_hero(X, Y, C, esc, UMBRAL, CONTAM, os.path.join(salida, "pluma_hero.png"))
-    exportar_ascii(os.path.join(salida, "pluma_NO2_estabD.asc"), X, Y, C)
+    m = figura_hero(X, Y, C, esc, UMBRAL, CONTAM, os.path.join(dir_sal, "pluma_hero.png"))
+    exportar_ascii(os.path.join(dir_dat, "pluma_NO2_estabD.asc"), X, Y, C)
     print("HERO (estab D):", {k: round(v, 3) for k, v in m.items()})
 
-    figura_sensibilidad(base, UMBRAL, CONTAM, os.path.join(salida, "pluma_sensibilidad.png"))
-    print("OK ->", salida)
+    figura_sensibilidad(base, UMBRAL, CONTAM, os.path.join(dir_sal, "pluma_sensibilidad.png"))
+    print("OK ->", dir_sal)

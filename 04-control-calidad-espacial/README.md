@@ -66,7 +66,7 @@ Reporte de auditoría: [`salidas/reporte_qc.xlsx`](salidas/reporte_qc.xlsx)
 Esta misma regla de tolerancias es uno de los reportes de un **sistema completo
 de auditoría de calidad** (FastAPI + PostGIS/SQLite, ingesta de GDB, 8
 validaciones automáticas, panel web e informe estático) que diseñé y desarrollé
-para un proyecto real. → **[Caso 04](../04-sistema-auditoria-calidad/)**
+para un proyecto real. → **[Caso 02](../02-sistema-auditoria-calidad/)**
 
 ## Datos de muestra
 

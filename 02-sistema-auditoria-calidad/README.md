@@ -70,7 +70,7 @@ Validaciones · Excepciones · **Omisiones y comisiones** (por estado y por
 digitalizador) · **Contraste GDB** (OK / ALERTA / CRÍTICO) · **Topología**
 (solapes y huecos con mapa Leaflet interactivo) · **Cumplimiento de área**
 (registral vs geográfica, bandas de tolerancia por tamaño — la misma regla del
-[caso 02](../02-control-calidad-espacial/)) · **Vínculo unidad↔terreno**
+[caso 04](../04-control-calidad-espacial/)) · **Vínculo unidad↔terreno**
 (correctas / omisiones / comisiones / discrepancias) · Distribución por etapa ·
 **Auditoría completa a Excel** multi-hoja · Predios por grupo (filtros por
 digitalizador, coordinador, estado…).
